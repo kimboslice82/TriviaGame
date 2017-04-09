@@ -1,13 +1,11 @@
 window.onload = function() {
-    
-    var counter=setInterval(timer, 1000); 
-    var deadline = 0;
-    var correctAnswers = $("#option3", "#option4", "#option8");
-    var incorrectAnswers = [];
+    var questions = $("#question1", "#question2", "#question3");
+    var correctAnswers = $("#answer3", "#answer4", "#answer8");
+    var incorrectAnswers = $("#answer1", "#answer2", "#answer5", "#answer6", "#answer7");
     var unanswered = [];
     var userGuess = [];
     
-
+    //the timer starts as soon as the page loads
     var timer = setInterval(function() {
         myTimer()
     }, 1000);
@@ -19,14 +17,14 @@ window.onload = function() {
 
 
     
-/*function gamePlay() {
+function gamePlay() {
    if (userGuess != correctAnswer) {
         incorrectAnswers++; 
        }
     else {
         correctAnswers++;
     }
-}*/
+}
     
 
 };
